@@ -1,0 +1,137 @@
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display: block;
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+   left:50%;transform: translateX(-50%); bottom: 20%;
+  animation:ani 1s infinite  alternate;}
+@keyframes ani {
+  0% { opacity:1; color:#fff;}
+  100% {  opacity:0.8; color:#888;}
+}	
+
+	
+#content{width:100%; margin:0; height:auto; background:rgba(0,0,0,.9);position: relative;}
+#content h2{position: absolute; top: -500px;
+width: 100%; text-align: center; font-size: 4em; color: #fff;
+font-family: var(--font-family);
+/* text-shadow: rgba(0,0,0,.9) 1px 1px 10px 1px; */
+}
+#content h3{
+   font-family: var(--font-family);
+   /* font-size: 3rem; */
+   }
+#content h4{
+   font-family: var(--font-family);
+   /* font-size: 1.8rem; */
+   }
+/* #content p{font-size: 1.2rem;} */
+#content h5{font-family: var(--font-family);}
+
+
+#content img{width: 100%; height: 100%;
+   object-fit: cover;
+   object-position: center;}
+   
+
+.sec1{width: 100%; padding: 100px 0 0 0; margin: 0 auto;
+   color: #fff;
+   text-align: center;}
+.sec1 h3{font-size: 4rem; line-height: 5rem;
+   margin-bottom: 30px; }
+.sec1 h4{font-size: 2rem; margin-bottom: 10px;
+   line-height: 2.3rem;}
+   
+.sec1 .imgbox{
+   background: url(../images/sub5/sec1.jpg) no-repeat ;
+   width: 100%;
+   height: 850px;
+   /* background-position: center right -95px; */
+   background-size:contain;
+   background-blend-mode: overlay;
+   padding: 100px;
+   text-align: left;
+   display: flex;
+   align-content: flex-end;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.sec1 .imgbox span{font-size: 1.6rem; margin-top: 50px;}
+.sec1 .imgbox .inner ul{font-size: 1.4rem; font-weight: 300;}
+.sec1 .imgbox .inner>ul>li{margin-bottom: 30px; line-height: 1.6rem;}
+.sec1 .imgbox .inner ul li ul li{margin-bottom: -5px;}
+   
+
+
+.sec2{width: 100%; padding-bottom: 100px; margin: 0 auto;
+   background: #fff;}
+.sec2 h3{font-size: 4rem; line-height: 5rem;
+   margin-bottom: 30px; }
+.sec2 h4{font-size: 1.8rem; margin-bottom: 15px;
+   line-height: 2.3rem;}
+.sec2 h5{font-size: 1.3rem; margin-bottom: 10px;}
+
+.sec2 .tab_menu{display: flex; justify-content: left; gap: 15px;
+   background: #f5f5f5; padding: 0 100px;
+   margin-bottom: 100px;}
+.sec2 .tab_menu li a{font-size: 1.5rem; font-family: var(--font-family);
+   padding: 15px ;}
+.sec2 .tab_menu li:nth-of-type(1) a{padding-left: 0;}
+.sec2 .series{padding: 0 100px;}
+.sec2 .series .series_list{width: 100%;}
+.sec2 .series .series_list:nth-of-type(2) ul{flex-wrap: wrap;}
+.sec2 .series .series_list:nth-of-type(2) ul li:nth-of-type(3){margin-top: 30px;}
+.sec2 .series .series_list ul{display: flex; flex-direction: row; 
+   margin-bottom: 70px;}
+.sec2 .series .series_list ul .car_list{width: 49%; display: flex; justify-content: left;
+   gap: 2%;}
+.sec2 .series .series_list ul .car_list>div:nth-of-type(1){width: 48%;}
+.sec2 .series .series_list ul .car_list>div:nth-of-type(2){width: 50%;}
+.sec2 .series .series_list ul .car_list>div:nth-of-type(1) img{object-position: left -30px;}
+
+.sec2 .series .series_list ul .car_list .car_info{
+   display: flex; flex-direction: column; justify-content: space-between;
+   margin-right: 30px;
+}
+.sec2 .series .car_list .car_info p{font-size: .95rem; line-height: 1.1rem;
+   color: #999;
+}
+.sec2 .series .car_list .car_info .specs span{font-size: .9rem;
+   line-height: 1.2rem;
+   display: block; font-family: var(--font-family);}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+}
