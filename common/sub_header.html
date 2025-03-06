@@ -1,0 +1,74 @@
+<header id="headerArea">
+    <div class="header_inner">
+        <h1 class="logo"><a href="../index.html">한국전통문화예절원 로고</a></h1>
+        <nav id="gnb">
+            <h2 class="hidden">글로벌네비게이션</h2>
+            <ul class="dropdownmenu">
+                <li class="m1 menu">
+                    <h3><a class="depth1" href="../sub1/sub1_1.html">예절원소개</a></h3>
+                    <ul>
+                        <li><a href="../sub1/sub1_1.html">설립목적</a></li>
+                        <li><a href="../sub1/sub1_2.html">인사말</a></li>
+                        <li><a href="../sub1/sub1_3.html">연혁</a></li>
+                        <li><a href="../sub1/sub1_4.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="m2 menu">
+                    <h3><a class="depth1" href="../sub2/sub2_1.html">예절교육</a></h3>
+                    <ul>
+                        <li><a href="../sub2/sub2_1.html">어린이교육</a></li>
+                        <li><a href="../sub2/sub2_2.html">전통문화체험</a></li>
+                        <li><a href="../sub2/sub2_3.html">전통예절교육</a></li>
+                    </ul>
+                </li>
+                <li class="m3 menu">
+                    <h3><a class="depth1" href="../sub3/sub3_1.html">자격과정</a></h3>
+                    <ul>
+                        <li><a href="../sub3/sub3_1.html">국가공인지도사</a></li>
+                        <li><a href="../sub3/sub3_2.html">유아다례지도사</a></li>
+                        <li><a href="../sub3/sub3_3.html">전통혼례지도사</a></li>
+                    </ul>
+                </li>
+                <li class="m4 menu">
+                    <h3><a class="depth1" href="../sub4/sub4_1.html">전통행사</a></h3>
+                    <ul>
+                        <li><a href="../sub4/sub4_1.html">전통성년례</a></li>
+                        <li><a href="../sub4/sub4_2.html">전통의례용품 대여</a></li>
+                        <li><a href="../sub4/sub4_3.html">전통원데이클래스</a></li>
+                    </ul>
+                </li>
+                <li class="m5 menu">
+                    <h3><a class="depth1" href="../sub5/sub5_1.html">전통혼례</a></h3>
+                    <ul>
+                        <li><a href="../sub5/sub5_1.html">전통혼례 소개</a></li>
+                        <li><a href="../sub5/sub5_2.html">전통혼례 진행</a></li>
+                    </ul>
+                </li>
+                <li class="m6 menu">
+                    <h3><a class="depth1" href="../notice/list.php">알림마당</a></h3>
+                    <ul>
+                        <li><a href="../notice/list.php">새소식 및 알림방</a></li>
+                        <li><a href="../sub6/sub6_1.html">상담 및 컨설팅</a></li>
+                        <li><a href="../news/list.php">보도자료</a></li>
+                        <li><a href="../career/list.php">채용공고</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul class="top_menu">
+
+            <? if(!$userid){    //로그인이 안 된 상태냐??  ?>
+
+            <li><a href="../login/login_form.php">로그인</a></li>
+            <li><a href="../member/member_check.html">회원가입</a></li>
+
+            <? } else { ?>
+
+            <li><a href="../login/logout.php">로그아웃</a></li>
+            <li><a href="../member/member_form_modify.php">정보수정</a></li>
+
+            <? } ?>
+        </ul>
+    </div>
+</header>

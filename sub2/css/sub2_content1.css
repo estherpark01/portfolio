@@ -1,0 +1,28 @@
+.img_box{width: 2000px; height: 300px; margin: 0 auto;
+    display: flex; justify-content: center; align-items: center;
+    background: url(../images/con1/scroll.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position:top 100px center;}
+
+
+
+.content_area .edu_con{text-align: left; margin: 0 auto 150px; width: 1400px;}
+.content_area .edu_con li dl{display: flex; margin: 0 0 40px;}
+.content_area .edu_con li dl dt{font-size: 1.7rem; font-weight: bold; margin-right: 150px;}
+.content_area .edu_con li:nth-last-of-type(1) dl dt{margin-right: 121px;}
+.content_area .edu_con li dl dd{font-size: 1.5rem; margin-top: 5px; line-height: 2.4rem;}
+
+
+.content_area .edu_age{width: 1400px; height: 350px; background: #F5F5F5;
+    margin: 0 auto 70px; } 
+.content_area .edu_age ul{justify-content: space-between;  display: flex;  padding: 70px 100px 0 100px; }
+.content_area .edu_age ul li{position: relative;width: 230px;}
+.content_area .edu_age ul dl{text-align: center;}
+.content_area .edu_age ul dl::after{content: '';  width: 150px; height: .5px; background: #999;
+    position: absolute; left: 50%; top: 85px; transform: translateX(-50%);}
+.content_area .edu_age ul dl dt{font-size: 1.7rem; margin-bottom: 50px;}
+.content_area .edu_age ul dl dt strong{font-size: 2.8rem;}
+.content_area .edu_age ul li:nth-last-of-type(1) dl dt{margin-top: 25px;}
+.content_area .edu_age ul dl dd{font-size: 1.25rem;}
+
+

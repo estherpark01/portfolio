@@ -1,0 +1,75 @@
+.content_area{width: 1400px; margin: 0 auto; }
+
+/* .content_area .search{width: 300px; border-bottom: 1px solid #666; margin: 0 0 30px 1080px; padding: 10px;}
+.content_area .search i{font-size: 1.3rem; margin-left: 280px;} */
+.search{margin: 0 1070px 30px; display: flex; gap: 10px;}
+.search input{font-size: 1.2rem; padding:5px 10px; border: none; border-bottom: 1px solid #999; text-align: center;}
+.search button{border: none; border-radius: 5px; padding: 5px 10px; transition: all .3s ease-out; cursor: pointer;}
+.search button:hover{background: #B8A080;}
+.search button i{font-size: 1.2rem; padding:5px 10px; transition: all .3s ease-out;}
+.search button:hover i{color: #fff;}
+
+
+.content_area .item_area .item_list .item{display: flex; justify-content: space-between;}
+.content_area .item_list .item li{margin-bottom: 50px; }
+.content_area .item_list.li2{display: none;}
+.content_area .item_list .item li>a{display: flex; flex-direction: column; flex-wrap: wrap;
+    text-align: center; border: 1px solid #ccc; padding: 20px 15px 15px 15px ; background: #fff;
+    border-radius: 10px; transition: all .3s ease-out;}
+.content_area .item_list .item li:hover>a{transform: scale(1.05); box-shadow: 1px 1px 10px .5px;}
+.content_area .item_list .item li a img{width: 400px; height: 450px; margin-bottom: 15px;
+    border-radius: 5px;}
+.content_area .item_list .item li a span{font-size: 1.2rem; font-weight: 500;}
+
+/* 모달 팝업 */
+@keyframes animatetop{
+    from{opacity:0; top:0;}
+    to{opacity:1;top:50%;}}
+
+.modal-custom{display: none; width: 100%; position:fixed; height: 100vh;
+    z-index:1; left:0; top:0; overflow:auto; background: rgba(0,0,0,0.6);
+     }
+.modal-custom .modal-content{width: 850px; height: 500px; 
+    position:absolute; left:50%; top: 50%; transform: translate(-50%,-50%);
+    background: #fbfbfb; display: flex;
+    border-radius: 15px;
+    animation-name:animatetop; animation-fill-mode:forwards;
+    animation-duration:0.4s;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
+.modal-custom .modal-content img{width: 350px; height: 400px; margin: auto 50px; border-radius: 15px;}
+.modal-content .modal-text{width: 350px;  transform: translateY(25%);}
+.modal-content .modal-text .close-modal{transform: translate(340px, -110px);
+    border: none; background: none; font-size: 2rem; 
+    cursor: pointer;}
+.close-modal:hover,.close-modal:focus{color: red;}
+.modal-content .modal-text dl dt{font-size: 1.8rem; font-weight: bold; margin-bottom: 10px; color: #333;}
+.modal-content .modal-text dl dd{font-size: 1.1rem; line-height: 1.7rem; text-align: justify;}
+.modal-content .modal-text a{width: 100px; margin-top: 50px; font-size: 1.1rem; }
+.modal-content .modal-text a i{margin-left: 10px; transition: all .3s ease-out;}
+/* .modal-content .modal-text a:hover{border: 1px solid #B8A080; } */
+.modal-content .modal-text a:hover i{transform: translateX(15px); color: red;}
+
+
+
+
+
+.tab_menu{width: 90px; display: flex; justify-content: space-between; margin: 0 auto 150px;}
+.tab_menu button{width: 40px; height: 40px; border-radius: 5px; background: #fbfbfb;
+    font-size: 1.2rem; border: 1px solid #999; color: #666;
+    transition: all .3s ease-out; cursor: pointer; padding-top: 2px;}
+.tab_menu button:hover{background: #B8A080; color: #fff;}
+
+
+
+
+
+table{width: 100%; border: 1px solid #B8A080; text-align: center;
+    margin-bottom: 70px; box-sizing: border-box; }
+td,th{border: 1px solid #B8A080; }
+th{background: #d6bc99; font-size: 1.4rem; padding: 10px 0;}
+td{font-size: 1.15rem; padding: 15px;line-height: 1.9rem;}
+td:nth-of-type(2) ul li{list-style: inside;}
+
+th:nth-of-type(1){width: 20%;}
+th:nth-of-type(4),td:nth-of-type(3){width: 15%;}
+th:nth-of-type(2){width: 50%;}

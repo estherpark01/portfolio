@@ -1,0 +1,66 @@
+01.DB 계정 접속/연결
+   $connect=mysqli_connect( "localhost", "계정아이디", "패스워드", "데이터베이스명");  
+   $connect=mysqli_connect( "localhost", "bini", "1234", "bini_db"); 
+
+02.DB선택
+   mysqli_select_db($connect , "데이터베이스명");
+   mysqli_select_db($connect , "bini_db");
+
+03.SQL처리
+   $sql = "select * from memberTable where id='$id'";  
+   $result = mysqli_query( $connect, $sql);
+
+04.DB 연결 끊기
+   mysqli_close($connect);   
+
+----------------------------------------------
+05.검색된 레코드의 개수를 리턴한다
+    $exist_id = mysqli_num_rows($result);
+
+06.검색된 레코드의 필드의 개수를 리턴한다
+    $fields=mysqli_num_fields($result);	
+
+
+
+---------------------------------------------------
+08. 검색된 레코드에서 한 레코드를 가져온다.
+    $row = mysqli_fetch_array($result);
+    // $row[id] , $row[name]
+
+09. 검색된 레코드에서 한 레코드(객체)를 가져온다.
+    $row = mysqli_fetch_object($result);
+     //$row->id , $row->name
+
+10. 검색된 레코드에서 한 레코드를 가져온다.
+   $row = mysqli_fetch_row($result);
+     // $row[0] ,  $row[1]
+---------------------------------------------------------------------
+11. 가져올 레코드로 위치(포인터) 이동  
+     mysqli_data_seek($result, $i);    
+
+----------------------------------------------------
+
+
+=======================================
+<?
+session_start();
+
+@extract($_POST);
+@extract($_GET);
+@extract($_SESSION);
+
+//$userid='아이디'
+//$username='이름'
+//$usernick='닉네임'
+//$userlevel='레벨'
+?>
+
+
+
+
+
+
+
+
+
+

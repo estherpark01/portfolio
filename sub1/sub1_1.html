@@ -1,0 +1,143 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+   // $userid = $_SESSION['$userid']
+   // $userid = $_SESSION['$username']
+   // $userid = $_SESSION['$usernick']
+   // $userid = $_SESSION['$userlevel']
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예절원소개:설립목적</title>
+
+    <link rel="shortcut icon" type="image/x-icon"  href="../favicon_1.ico" >
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../common/css/aos.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content1.css">
+
+
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+
+<!-- 헤더 영역 -->
+<div class="wrap">
+    
+    <? include "../common/sub_header.html" ?>
+
+<!-- 헤더 영역 종료 -->
+
+
+<!-- 서브페이지 공통 영역 -->
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="">
+            <strong>예절원소개</strong>
+        </div>
+        <div class="sub_nav">
+            <ul>
+                <li><a class="current" href="./sub1_1.html">설립목적</a></li>
+                <li><a href="./sub1_2.html">인사말</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li><a href="./sub1_4.html">오시는길</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    home > 예절원소개 > <strong>설립목적</strong>
+                </div>
+                <h2>설립목적</h2>
+                <p>Objectives</p>
+            </div>
+<!-- 서브페이지 공통 영역 종료 -->
+
+            <div class="content_area">
+                <p data-aos="fade-up" data-aos-easing="linear">전통의 가치를 이어 미래의 가치를 창조하는 <br>
+                    예절교육 및 전통문화행사전문기관입니다.</p>
+                <!-- <img src="./images/content1/scroll.jpg" alt=""> -->
+                <div class="img_box"></div>
+                <h3 data-aos="fade-left" data-aos-easing="linear">상응과 상생, <br>
+                전통에서 길을 찾다</h3>
+                <p data-aos="fade-left" data-aos-duration="500" data-aos-easing="linear">한국전통문화예절원 협동조합에는 
+                    전통문화의 맥을 이어가는 <br>
+                    다섯 마당의 커다란 사명과 전문가의 정신이 있습니다.</p>
+
+                <div class="content_inner">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="500"><img src="./images/content1/con1.png" alt="">
+                            <div class="con1">
+                                <strong>최고의 전문성</strong>
+                                <p>국내 최고의
+                                    인성예절 • 전통체험 <br>
+                                    교육 전문가</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="700"><img src="./images/content1/con2.png" alt="">
+                            <div class="con2">
+                                <strong>창의력</strong>
+                                <p>전통문화의 실천적 창조를 추구하는 신선함</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="900"><img src="./images/content1/con3.png" alt="">
+                            <div class="con3">
+                                <strong>기획력</strong>
+                                <p>전통의 이미지를 해맑은 수채화로 그려내는 능력</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="1100"><img src="./images/content1/con4.png" alt="">
+                            <div class="con4">
+                                <strong>불굴의 정신</strong>
+                                <p>인간 고유의 가치 실현을 위한 부단한 노력</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="1300"><img src="./images/content1/con5.png" alt="">
+                            <div class="con5">
+                                <strong>함께 사는 세상</strong>
+                                <p>더불어 함께 일하고 나누며 함께 만들어가는 세상</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+         
+        </article>
+   
+        
+        <? include "../common/sub_footer.html" ?>
+
+
+</div>
+
+    <script src="../common/js/aos.js"></script>
+    <script>
+        AOS.init({
+        easing: 'ease-in-out-sine'
+        });
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="./common/js/sub1common.js"></script>
+    <script src="./js/sub1_1.js"></script>
+
+</body>
+</html>

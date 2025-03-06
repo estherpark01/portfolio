@@ -1,0 +1,16 @@
+<form  name="member_form" method="post" action="insert.php">
+
+<post>
+아이디 -> $id
+비밀번호 -> $pass
+비밀번호 확인 -> $pass_confirm
+이름 -> $name
+닉네임 -> $nick
+휴대폰 
+- $hp1
+- $hp2
+- $hp3
+
+이메일 
+- $email1
+- $email2

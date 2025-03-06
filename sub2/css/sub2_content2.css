@@ -1,0 +1,26 @@
+.img_box{width: 2000px; height: 300px; margin: 0 auto;
+    display: flex; justify-content: center; align-items: center;
+    background: url(../images/con2/scroll.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position:top 50px center;}
+
+
+
+.content_area .edu_con{text-align: left; margin-bottom: 150px;}
+.content_area .edu_con li dl{display: flex; margin: 0 0 20px;}
+.content_area .edu_con li dl dt{font-size: 1.7rem; font-weight: bold; margin-right: 150px;}
+.content_area .edu_con li dl dd{font-size: 1.5em; margin-top: 5px; line-height: 2.4rem;}
+
+table{border: 1px solid #B8A080; text-align: center; margin-bottom: 70px;}
+td,th{border: 1px solid #B8A080; }
+th{background: #d6bc99; font-size: 1.4rem; padding: 10px 0;}
+td{font-size: 1.15rem; padding: 30px 20px;line-height: 1.9rem;}
+td:nth-of-type(1),td:nth-of-type(3){width: 20%;}
+td:nth-of-type(2){width: 60%; text-align: justify; }
+td:nth-of-type(2) ul li{list-style: inside;}
+td:nth-of-type(2) ul li dl{position: relative;}
+td:nth-of-type(2) ul li dl dt{margin-left: 28px;}
+td:nth-of-type(2) ul li dl dt::before{content: ''; width: 8px; height: 8px; border-radius: 50%; background: #333;position: absolute; left: 0; top: 12px;}
+td:nth-of-type(2) .no_listst{list-style: none ;}
+td:nth-of-type(2) ul li dl dd{margin-left: 50px; position: relative;}
+td:nth-of-type(2) ul li dl dd::before{content: ''; width: 7px; height: 2px; background: #333; position: absolute; left: -20px; top: 15px; }

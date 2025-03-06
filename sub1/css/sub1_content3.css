@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 연혁 페이지 내용영역 */
+.content_area{width: 2000px; margin: 0 auto; position: relative;}
+.content_area>p:nth-of-type(1){text-align: center; font-size: 1.8rem; margin-bottom: 100px;}
+
+.content_area .year{width: 1400px; margin: 0 auto;
+    display: flex; justify-content: left; gap:0; position: relative; }
+    .content_area .year .year_left{width: 500px; position: relative;}
+.content_area .year.y1{height: 1150px; margin-bottom: 100px;} 
+.content_area .year.y2{height: 2070px; margin-top: 100px;}
+.year h3{font-size: 50px;} 
+.year .year_inner{width: 900px; left: 35%; top: 0;}
+.year .year_inner ul>li{overflow: hidden; padding: 50px 0; border-top: 1px solid #999;box-sizing: border-box;}
+.y2 .year_inner ul>li:nth-child(1){border-top:none ; box-sizing: border-box;}
+.year .year_inner h4{font-size: 40px; left: 0; top: 0; float: left;}
+.year .year_inner ol{margin-left:200px;}
+.year .year_inner ol li{font-size: 20px; text-align: left; line-height: 2.3rem;}
+.year .year_inner ul>li:nth-last-of-type(1){border-bottom: none; margin-bottom: 100px;}
+
+
+
+.img_box{width: 2000px; height: 350px; 
+    margin: 0 auto ;
+    display: flex; justify-content: center; align-items: center;
+    background: url(../images/content3/scroll_image.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+/* 
+.fix{position: fixed; width: 100%;
+        z-index:60; left:0; top: 0;} */
+
+/* .yearOn{position: fixed; width: 100%;
+    z-index:60; left:0; top: 0;} */
+
+
+
+#content .year h3.fix {
+    position: fixed; z-index: 20;
+    left:50%; top: 92px; margin-left: -652px; color: #b8a080;}

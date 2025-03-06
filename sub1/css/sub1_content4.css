@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 이전 페이지 내용영역 */
+
+.content_area{width: 2000px; left: 50%; transform: translateX(-50%); position: relative;}
+
+.content_area>p:nth-of-type(1){text-align: center; font-size: 1.8rem;}
+
+.content_area .content_inner{display: flex; margin: 100px 0 200px; justify-content: center;}
+.content_area .content_inner .map_box{width: 1000px; height: 900px; border-radius: 30px;
+    border: 1px solid #ccc; transform: translateX(-100px); overflow: hidden;}
+#map{width: 1000px; height: 900px;}
+
+.content_area .location .map1{margin: 50px 0 130px;}
+
+.content_area .location li>p:nth-of-type(1){margin-bottom: 20px;}
+.content_area .location li>p strong{font-size: 2.3rem; }
+
+.content_area .location li>p:nth-of-type(2){font-size: 20px;}
+.content_area .location li div i{font-size: 1.7rem;}
+.content_area .location li div .title{font-size: 1.7rem; font-weight: 500;}
+.content_area .location li div p{font-size: 20px; margin: 20px 0 ;}
+.content_area .location li div span{width: 60px ; height: 20px; border: 4px solid #FFC583;
+    border-radius: 20px; font-size: 20px; padding: 3px 10px; margin-right: 10px;}
+.map2 .subway p:nth-of-type(3){margin-bottom: 90px;}
+.content_area .content_inner .map2{position: relative;}
+.subway .title{position: absolute; left: 40px;  top: 45px;}
+.bus .title{position: absolute; left: 40px;  top: 261px; }
+.content_area li .bus p:nth-of-type(2) span{border: 4px solid #2ECB38;}
+.content_area li .bus p:nth-of-type(3) span{border: 4px solid #2ECB38;}
+.content_area li .bus p:nth-of-type(4) span{border: 4px solid #1878C7;}
+.content_area li .bus p:nth-of-type(5) span{border: 4px solid #FA4A4A;}
+

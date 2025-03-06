@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 설립목적 페이지 내용영역 */
+.content_area{width: 1400px; margin: 0 auto;}
+
+.content_area>p:nth-of-type(1){font-size: 1.8rem; text-align: center; line-height: 2.3rem;}
+.content_area>p:nth-of-type(2){font-size: 1.5rem; margin-top: 70px; line-height: 2.1rem;}
+
+.img_box{width: 1400px; height: 600px; 
+    margin: 100px auto 200px; border-radius: 30px;
+    display: flex; justify-content: center; align-items: center;
+    background: url(../images/content1/scroll_img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;}
+
+/* .content_area>img:nth-of-type(1){margin: 100px 0 200px; border-radius: 30px;} */
+
+.content_area h3{font-size: 50px; line-height: 65px;}
+
+.content_area .content_inner{ margin: 150px 0 200px;}
+.content_area .content_inner ul{display: flex; justify-content: space-between;}
+.content_area .content_inner ul li{width: 270px; height: 270px; border-radius: 50%;
+    background: #F9F2DF; text-align: center; position: relative; transition: all .5s ease-out;}
+.content_area .content_inner ul li:hover{box-shadow: rgba(0, 0, 0, .5) 0px 1px 10px 1px; transform: scale(1.03);
+    background: #b8a080;}
+.content_area .content_inner ul li img{width: 140px; position: absolute; left: 50%; top: 45%;
+    transform: translate(-50%,-50%); border-radius: 0; transition: all .3s ease-out;}
+.content_area .content_inner ul li:hover img{display: none;}
+.content_area .content_inner li div{position: absolute; left: 50%; top: 80%; transform: translate(-50%,-50%);
+    transition: all .5s ease-out;}
+.content_area .content_inner li:hover div{top:50%; color: #fff;}
+.content_area li div strong{font-size: 1.3rem;}
+.content_area li div p{font-size: 1.1rem; display: none;}
+.content_area li:hover div p{display: block; line-height: 1.5rem; margin-top: 10px; text-align: center; }

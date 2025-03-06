@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* 인사말 페이지 내용영역 */
+.content_area{width: 1400px; margin: 0 auto 200px ; display: flex; justify-content: space-between; gap: 70px;}
+
+.content_area img{border-top-right-radius:50px; width: 450px;}
+.content_area .con_right p{text-align: justify;}
+.content_area .con_right p strong{font-size: 30px;}
+.content_area .con_right p:nth-of-type(2){font-size: 1.2rem; line-height: 1.7rem; margin-top: 50px;}

@@ -1,0 +1,392 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+   // $userid = $_SESSION['$userid']
+   // $userid = $_SESSION['$username']
+   // $userid = $_SESSION['$usernick']
+   // $userid = $_SESSION['$userlevel']
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국전통문화예절원</title>
+
+    <link rel="shortcut icon" type="image/x-icon"  href="./favicon_1.ico" >
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="stylesheet" href="./common/css/swiper.min.css">
+    <link rel="stylesheet" href="./common/css/aos.css">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/mainlayout.css">
+    
+
+
+</head>
+<body>
+
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+        
+
+        <? include "./common/main_header.html" ?>
+
+
+        <div class="visual">
+            <div class="gallery">
+                     <ul>
+                          <li class="link1"><a href="#"><img src="./images/visual1.jpg" alt='' >
+                            <span><strong>相應과 相生</strong></span>
+                            <span>전통에서 길을 찾다.</span>
+                            </a></li>
+                          <li class="link2"><a href="#"><img src="./images/visual2.jpg" alt='' >
+                            <span><strong>선례후학(先禮後學)</strong></span>
+                            <span>지혜와 덕성을 우선으로 가르치는<br>사랑의 실천철학</span>
+                            </a></li>
+                          <li class="link3"><a href="#"><img src="./images/visual3.jpg" alt='' >
+                            <span><strong>법고창신(法古創新)</strong></span>
+                            <span>옛것을 본받아 새로운 것을 창조하다.</span>
+                            </a></li>
+                    </ul>
+             </div>
+             
+             <div class="dock">
+              	<span class="mbutton  btn1" ></span>
+              	<span class="mbutton  btn2" ></span>
+             	<span class="mbutton  btn3" ></span>
+              	<span class="ps" >
+                    <span class="hidden">stop</span>
+                    <span class="material-symbols-outlined">stop</span>
+                </span>
+            </div>
+            
+            <span class="btn btnLeft">
+                <span class="material-symbols-outlined">chevron_left</span></span>
+            <span class="btn btnRight">
+                <span class="material-symbols-outlined">chevron_right</span></span>
+     	</div> 
+
+        
+        <article id="content">
+            <h2 class="hidden">본문컨텐츠 영역</h2>
+
+            <section class="company">
+                <img data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="600" class="company_img" src="./images/company1.jpg" alt="">
+                <div class="company_right">
+                    <div data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="600" class="com_top">
+                        <h3>예절원 이야기</h3>
+                        <dl>
+                            <dt>법고창신( 法古創新 )</dt>
+                            <dd>: 옛것을 본받아 새로운 것을 창조하다.</dd>
+                            <dd>어린이 청소년들의 창의성과 인성교육을 실천함과 동시에 <br>
+                                전통에 등불을 밝혀 미래의 횃불이 되어 꿈꾸는 아이들의 길잡이가 되도록 <br>
+                                최선의 노력을 다하는 한국전통문화예절원에 오신 것을 <br>
+                                진심으로 환영합니다.</dd>
+                        </dl>
+                        <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                            chevron_right
+                            </span></a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="700" class="com_bot">
+                        <ul>
+                            <li><a href="#"><img src="./images/company_1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/company_2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/company_3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/company_4.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/company_5.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/company_6.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ceremony">
+                <h3 data-aos="fade-up" data-aos-easing="ease-in-sine">전통의례</h3>
+                <p data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="400">과거의 지혜와 가치를 담아 <br>
+                    현재 우리가 살아가는 방식과 미래를 향한 비전을 제시합니다.</p>
+                    <ul>
+                        <li data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700" class="ceremony_1">
+                            <div>
+                                <h4>전통성년례</h4>
+                                <p>성인이 되는 출발점에서 <br>
+                                청소년들에게 자신을 자각할 수 있는 기회를 제공하고 <br>
+                                성인으로서의 책임을 일깨우는 의식이며, <br>
+                                세상을 바르게 살아가기 위한 가르침을 주는데 그 참 뜻이 있습니다.</p>
+                                <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                chevron_right</span></a>
+                            </div>
+                            <img class="ceremony_img1" src="./images/ceremony1.jpg" alt="">
+                        </li>
+                        <li data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="700" class="ceremony_2">
+                            <img class="ceremony_img2" src="./images/ceremony2.jpg" alt="">
+                            <div>
+                                <h4>전통혼례</h4>
+                                <p>전통의 멋과 신명이 살아있는 전통혼례는 <br>
+                                우리의 아름다운 혼례문화입니다. <br>
+                                우리 전통혼례에서는 혼인을 인륜지대사라 하여 <br>
+                                삼서정신과 평등정신을 기본으로 두고 부부간의 예를 갖추었습니다.</p>
+                                <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                chevron_right</span></a>
+                            </div>
+                        </li>
+                    </ul>
+            </section>
+
+            <section class="program">
+                <h3 data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="600" >전통문화예절체험</h3>
+                <p data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="600" >전통예절과 전통창의체험을 통해 우리 전통문화의 멋을 알게 하며 <br>
+                    예의바른 행동과 함께 자주적·미적 창의성 개발·심미적 감성을 향상시키는 프로그램입니다.</p>
+                <ul class="program_inner">
+                    <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="1000" class="program_1">
+                        <img src="./images/program1.jpg" alt="">
+                        <div>
+                            <h4>어린이 교육</h4>
+                            <i class="fa-solid fa-child"></i>
+                            <p>다양한 전통문화와 체험을 통해
+                                집중력과 인내심, 창의력 향상에
+                                도움을 주는 배움의 장입니다.</p>
+                            <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                            chevron_right</span></a>
+                        </div>
+                    </li>
+                    
+                    <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="1400" class="program_2">
+                        <img src="./images/program2.jpg" alt="">
+                        <div>
+                            <h4>전통문화체험</h4>
+                            <i class="fa-solid fa-shapes"></i>
+                            <p>전통문화체험을 통해 창의, 융합적 사고력을 키울 수 있도록 합니다.</p>
+                            <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                            chevron_right</span></a>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="1800" class="program_3">
+                        <img src="./images/program3.jpg" alt="">
+                        <div>
+                            <h4>전통예절교육</h4>
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <p>존중과 배려의 언어사용과 품격 있는 행동을 습관화 할 수 있도록 합니다.</p>
+                            <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                            chevron_right</span></a>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-easing="easeOutQuad" data-aos-duration="2200" class="program_4">
+                        <img src="./images/program4.jpg" alt="">
+                        <div>
+                            <h4>전통예절학당</h4>
+                            <i class="fa-solid fa-school-flag"></i>
+                            <p>전통문화사랑과 자긍심을 고취하며 성취감 및 창의성 발달에 중점을 두어 교육 운영하고 있습니다.</p>
+                            <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                            chevron_right</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="learn">
+                <h3 data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="600">전문지도사육성과정</h3>
+                <p data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="600">한국전통문화예절원협동조합의 전문지도강사가 되기 위한 교육과정 입니다.</p>
+                <div class="learn_inner">
+                    <img data-aos="fade-right" data-aos-easing="easeOutQuad" data-aos-duration="800" src="./images/learn1.jpg" alt="">
+                    
+                    <ul data-aos="fade-left" data-aos-easing="easeOutQuad" data-aos-duration="800">
+                        <li class="learn_content">
+                            <h4>국가공인실천예절지도사</h4>
+                            <p>국민의 문화적 의전을 분명하게 하고, 예의와 풍속을 바로 지도하는 전도자적 능력을 갖춘 직업인으로 양성하는 과정입니다.</p>
+                            <div class="btn">
+                                <div class="btn_1"><span class="material-symbols-outlined">
+                                    chevron_left
+                                    </span></div>
+                                <div class="btn_2"><span class="material-symbols-outlined">
+                                    chevron_right
+                                    </span></div>
+                                <a class="btn_plus" href="#"><span class="material-symbols-outlined">add</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+           
+            <section class="notice">
+                <? include "./lib/func.php" ?>
+                <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="650" class="notice_left">
+                    <h3>알림마당</h3>
+                    <p><strong>생생한 소식과 정보를 <br>
+                        전해드립니다.</strong></p>
+                    <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                        chevron_right
+                        </span></a>
+                    <div class="btn">
+                        <div class="btn_1 button"><span class="material-symbols-outlined">
+                            chevron_left</span></div>
+                        <div class="btn_2 button"><span class="material-symbols-outlined">
+                            chevron_right</span></div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700" class="notice_right swiper">
+                        <ul class="swiper-wrapper">
+                            <? latest_article("greet", 7, 20, 40); ?>
+                            <!-- <li class="swiper-slide">
+                                <div>
+                                    <p>공지사항</p>
+                                    <p><strong>제목1</strong></p>
+                                    <p>생생한 소식과 정보를 <br>
+                                        전해드립니다.</p>
+                                    <p>2024.10.23</p>
+                                    <a class="more" href="./greet/list.php">자세히 보기<span class="material-symbols-outlined">
+                                        chevron_right
+                                        </span></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <p>공지사항</p>
+                                    <p><strong>제목2</strong></p>
+                                    <p>생생한 소식과 정보를 <br>
+                                        전해드립니다.</p>
+                                    <p>2024.10.23</p>
+                                    <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                        chevron_right
+                                        </span></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <p>공지사항</p>
+                                    <p><strong>제목3</strong></p>
+                                    <p>생생한 소식과 정보를 <br>
+                                        전해드립니다.</p>
+                                    <p>2024.10.23</p>
+                                    <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                        chevron_right
+                                        </span></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <p>공지사항</p>
+                                    <p><strong>제목4</strong></p>
+                                    <p>생생한 소식과 정보를 <br>
+                                        전해드립니다.</p>
+                                    <p>2024.10.23</p>
+                                    <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                        chevron_right
+                                        </span></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <p>공지사항</p>
+                                    <p><strong>제목5</strong></p>
+                                    <p>생생한 소식과 정보를 <br>
+                                        전해드립니다.</p>
+                                    <p>2024.10.23</p>
+                                    <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                        chevron_right
+                                        </span></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <p>공지사항</p>
+                                    <p><strong>제목6</strong></p>
+                                    <p>생생한 소식과 정보를 <br>
+                                        전해드립니다.</p>
+                                    <p>2024.10.23</p>
+                                    <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                        chevron_right
+                                        </span></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <p>공지사항</p>
+                                    <p><strong>제목7</strong></p>
+                                    <p>생생한 소식과 정보를 <br>
+                                        전해드립니다.</p>
+                                    <p>2024.10.23</p>
+                                    <a class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                                        chevron_right
+                                        </span></a>
+                                </div>
+                            </li> -->
+                        </ul>
+                </div>
+            </section>
+
+            <section class="advice">
+                <img data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="900" src="./images/advice.jpg" alt="">
+                <div data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" class="advice_inner">
+                    <h3>상담 및 컨설팅</h3>
+                    <p>간편하게 상담을 신청해 보세요. <br>
+                        전문 컨설턴트가 24시간 이내 친절히 상담해 드리겠습니다.</p>
+                </div>
+                <a data-aos="fade-up" data-aos-easing="ease-in-sine" class="more" href="#">자세히 보기<span class="material-symbols-outlined">
+                    chevron_right
+                    </span></a>
+            </section>
+        </article>
+
+        
+        <? include "./common/main_footer.html" ?>
+
+
+    </div>
+
+    <!-- 메인 공지 팝업 -->
+    <div id="showimage" style="z-index:90; position:absolute; width:322px; left:50%; top:300px; margin-left: 350px;">
+        <script>
+          function closeWin(){
+             var chk = document.getElementById('Notice')
+             if ( chk.checked ) {
+                   setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+              }
+          }
+         if ( getCookie( "Notice" ) == "done" ) {
+             hidebox();
+         }
+       </script>
+          <div>
+                <img src="./images/popup.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+          </div>
+           <div style="font-size:12px;text-align:center;color:#fff; margin-top:10px; ">
+             <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+           <a style="color: #fff;" href="#"  onclick="closeWin();hidebox();return false;"> [close] </a>
+        </div>
+      </div>
+      
+    <script src="./mainjs/mainpopup.js"></script>
+    <script src="./common/js/aos.js"></script>
+    <script>
+        AOS.init({
+        easing: 'ease-in-out-sine'
+        });
+    </script>
+    
+
+    <script src="./common/js/jquery-1.12.4.min.js"></script>
+    <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./common/js/jquery.easing.1.3.js"></script>
+    
+    <script src="./common/js/swiper.min.js"></script>
+
+    <script src="./common/js/common.js"></script>
+    <script src="./mainjs/mainjs.js"></script>
+
+
+
+    
+</body>
+</html>

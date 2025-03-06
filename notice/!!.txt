@@ -1,0 +1,6 @@
+<form  name="board_form" method="post" action="insert.php?liststyle=<?=$liststyle?>">
+
+$subject ='글제목'
+$html_ok ='y'(체크시)
+$contents ='글내용'
+

@@ -1,0 +1,37 @@
+#content img{width: 1400px; height: 500px; margin-bottom: 150px;}
+
+.content_area h4{font-size: 2.2rem; margin-bottom: 20px;}
+
+.content_area .discription ul li{font-size: 1.4rem; list-style: inside;}
+.content_area .discription ul li:nth-last-of-type(1){ margin-bottom: 150px;}
+
+.content_area .job{margin-bottom: 150px;}
+.content_area .job>p{font-size: 1.3rem; margin-top: 100px;}
+.content_area .job h4{margin-bottom: 50px;}
+.content_area .job ul{display: flex; justify-content:space-between; overflow: hidden; }
+.content_area .job ul li{width: 450px; height: 450px; border-radius: 50%; background: #F9F2DF;
+    position: relative;}
+.content_area .job ul li div{width: 80%; position: absolute; left: 10%; top: 43%;}
+.content_area .job ul li p{
+    font-size: 1.3rem; text-align: justify;}
+
+
+.content_area .tab_menu{display: flex; justify-content: left;}
+.content_area .tab_menu li a{width: 120px; border-radius: 20px 20px 0 0; border: 1px solid #B8A080;
+    padding: 15px; text-align: center; transition: all .3s ease-out;}
+.content_area .tab_menu li:hover a{color: #fff; background: #B8A080;}
+.content_area .tab_box{width: 1400px; border: 1px solid #B8A080; margin:-1px 0 70px; overflow: hidden; box-sizing: border-box;}
+
+.content_area .tab_box .contlist{padding: 0 20px; display: none;}
+.content_area .tab_box .contlist h5{font-size: 1.7rem; margin-bottom: 20px; padding: 80px 0 0 20px ;} 
+
+table{width: 100%; border: 1px solid #B8A080; text-align: center;
+    margin-bottom: 20px; box-sizing: border-box; }
+td,th{border: 1px solid #B8A080; }
+th{background: #d6bc99; font-size: 1.4rem; padding: 10px 0;}
+td{font-size: 1.15rem; padding: 30px 20px;line-height: 1.9rem;}
+td:nth-of-type(2) ul li{list-style: inside;}
+
+td:nth-of-type(1),td:nth-of-type(3){width: 20%;}
+td:nth-of-type(2){width: 60%; text-align: justify; }
+td:nth-of-type(3){width: 20%;}

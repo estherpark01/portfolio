@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* 비주얼 공통 */
+.visual{width: 2000px; height: 420px; 
+    position: relative; top: 210px; left: 50%; transform: translate(-50%,-50%); overflow: hidden;}
+.visual img{filter:brightness(85%) blur(0px);}
+.visual strong{font-size: 30px; color: #fff; 
+    position: absolute; left: 0; top: 210px; width: 100%; text-align: center;
+    font-weight: inherit;}
+
+
+/* 서브네비 공통 */
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{width:1400px; margin: 0 auto;
+    display: flex; justify-content: center;}
+.sub_nav ul li{width: 250px; text-align: center; box-sizing: border-box;}
+.sub_nav ul li a{font-size: 1.2rem; padding: 15px 0;}
+.sub_nav ul li a.current{color: #b8a080; border-bottom: 3px solid #B8A080; font-weight: 600;}
+
+
+/* title_area 공통 */
+#content{width: 100%;}
+#content .title_area{width: 1400px; margin: 0 auto 150px;
+    position: relative; overflow: hidden;}
+#content .title_area .line_map{position: absolute; right: 0; top: 20px;
+    color: #999;}
+#content .title_area .line_map strong{color: #B8A080;}
+#content .title_area h2{font-size: 60px; padding-top: 200px; text-align: center;}
+#content .title_area p{font-size: 1.3rem; text-align: center; font-weight: 200;} 
+
+
+/* sub_title 공통 */
+#content .sub_title{width: 1400px; margin: 0 auto; text-align: center;}
+#content .sub_title h3{font-size: 2.6rem; margin-bottom: 20px;}
+#content .sub_title p{font-size: 1.6rem; line-height: 2.3rem; margin-bottom: 100px;}
+
+.content_area{width: 1400px; margin: 0 auto;}
+.content_area h4{font-size: 2.2rem; margin: 150px 0 50px;}
+
+
+
+
+/* 버튼 영역 */
+.btn_apply{width: 160px; border: 1px solid #B8A080 ;
+    border-radius: 100px; color: #B8A080; text-align: center; line-height: 2rem;
+    padding: 10px 5px 10px 15px; display: flex; justify-content: center; overflow: hidden;
+    transition: all .3s ease-out; margin: 0 auto 150px;}
+.btn_apply:hover{background: #B8A080; color: #fff;}
+.btn_apply span{font-size: 2.1rem; transition: all .3s ease-out;}
+.btn_apply:hover span{transform: translateX(30%);}
