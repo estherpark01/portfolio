@@ -11,7 +11,7 @@
 
     include "../lib/dbconn.php";
 
-    $sql = "delete from greet where num = $num";
+    $sql = "delete from notice where num = $num";
     mysqli_query( $connect, $sql);
 
     mysqli_close($connect); 

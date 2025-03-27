@@ -59,7 +59,7 @@
 		$subject = str_replace("'", "&#039;", $subject);
 		$contents = str_replace("'", "&#039;", $contents);
 
-		$sql = "update greet set subject='$subject', content='$contents' where num=$num"; // sql 업데이트문
+		$sql = "update notice set subject='$subject', content='$contents' where num=$num"; // sql 업데이트문
 	}
 	else  //새글쓰기
 	{
@@ -78,7 +78,7 @@
 		$contents = str_replace("'", "&#039;", $contents);
 	 	//  "(&quot;) '(&#039;) &(&amp;) <(&lt;) >(&gt;)
 
-		$sql = "insert into greet (id, name, nick, subject, content, regist_day, hit, is_html) ";
+		$sql = "insert into notice (id, name, nick, subject, content, regist_day, hit, is_html) ";
 		$sql .= "values('$userid', '$username', '$usernick', '$subject', '$contents', '$regist_day', 0, '$is_html')";
 	}
 
