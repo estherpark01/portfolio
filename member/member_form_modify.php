@@ -172,12 +172,12 @@
     $row = mysqli_fetch_array($result);
     //$row[id]....$row[level]
 
-    $hp = explode("-", $row[hp]);  //000-0000-0000
+    $hp = explode("-", $row['hp']);  //000-0000-0000
     $hp1 = $hp[0];
     $hp2 = $hp[1];
     $hp3 = $hp[2];
 
-    $email = explode("@", $row[email]);
+    $email = explode("@", $row['email']);
     $email1 = $email[0];
     $email2 = $email[1];
 
@@ -205,7 +205,7 @@
                 <dl>
                     <dt><label for="id">아이디</label></dt>
                     <dd>
-                        <input type="text" value="<?= $row[id] ?>" readonly>    
+                        <input type="text" value="<?= $row['id'] ?>" readonly>    
                         <!-- 수정 못하게 readonly -->
                     </dd>
                 </dl>
@@ -225,13 +225,13 @@
                 <dl>
                     <dt><label for="name">이름</label></dt>
                     <dd>
-                        <input type="text" name="name" id="name" value="<?= $row[name] ?>" required>
+                        <input type="text" name="name" id="name" value="<?= $row['name'] ?>" required>
                     </dd>
                 </dl>
                 <dl>
                     <dt><label for="nick">닉네임</label></dt>
                     <dd>
-                        <input type="text" name="nick" id="nick" value="<?= $row[nick] ?>" required>
+                        <input type="text" name="nick" id="nick" value="<?= $row['nick'] ?>" required>
                         <div class="notice_txt" id="loadtext2"></div>
                     </dd>
                 </dl>

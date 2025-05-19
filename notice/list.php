@@ -44,11 +44,11 @@
 			exit;
 		}
 
-		$sql = "select * from greet where $find like '%$search%' order by num desc";	// 검색내용 표시
+		$sql = "select * from notice where $find like '%$search%' order by num desc";	// 검색내용 표시
 	}
 	else	// 일반 리스트 출력(페이지번호)
 	{
-		$sql = "select * from greet order by num desc";
+		$sql = "select * from notice order by num desc";
 	}
 
 
@@ -108,7 +108,6 @@
 			<div class="content_area">
                 <div class="summary">
                     <p>한국전통문화예절원의 소통공간, 새소식과 공지사항 안내입니다.</p>
-                    <!-- <p>철강포장 및 소재 전문기업으로서 철강사업에 새로운 가치를 제공하고 시너지를 창출하고자 합니다.</p> -->
                 </div>
 
 
@@ -270,6 +269,5 @@
 	<script src="../common/js/jquery.easing.1.3.js"></script>
 	<script src="../common/js/common.js"></script>
 	<script src="./common/js/sub6common.js"></script>
-	<!-- <script src="./js/sub1_1.js"></script> -->
 </body>
 </html>

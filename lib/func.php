@@ -32,7 +32,7 @@
 
             
 			
-			if($table=='greet'){		// 공지사항 table
+			if($table=='notice'){		// 공지사항 table
 
 				echo "      
 					<li class='swiper-slide'>

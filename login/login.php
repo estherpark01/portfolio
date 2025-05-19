@@ -83,10 +83,10 @@
         }
         else    // 입력 pass 와 테이블에 저장된 pass 일치한다.
         {
-            $userid = $row[id]; //각 필드에 저장된 id 값    
-            $username = $row[name]; 
-            $usernick = $row[nick];
-            $userlevel = $row[level];
+            $userid = $row['id']; //각 필드에 저장된 id 값    
+            $username = $row['name']; 
+            $usernick = $row['nick'];
+            $userlevel = $row['level'];
   
             //세션변수에 id~level 값을 저장한다(로그인상태)
             $_SESSION['userid'] = $userid;//$_SESSION['userid'] = $row[id];
