@@ -10,7 +10,7 @@
 
 	include "../lib/dbconn.php";
 
-	$sql = "select * from greet where num=$num";
+	$sql = "select * from notice where num=$num";
 	$result = mysqli_query( $connect, $sql);
 
 	$row = mysqli_fetch_array($result);   	

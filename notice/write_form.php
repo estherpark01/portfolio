@@ -100,9 +100,7 @@
 						</div>
 					</form>
 				</div>
-
-
-				</div>
+			</div>
         </article>
 
 	<? include "../common/sub_footer.html" ?>
