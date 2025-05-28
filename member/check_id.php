@@ -30,7 +30,7 @@
         ";
 
     }
-    else if(strlen($id) < 6){
+    else if(strlen($id) <= 5){
         echo "
             <span class='fail'>6자 이상의 아이디를 입력하세요.</span>
             <script>
