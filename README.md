@@ -9,7 +9,7 @@
     + http://estherpark01.mycafe24.com/media/
 * React SPA 프로젝트(기상청)
     + http://estherpark01.mycafe24.com/media/
-* React SPA 프로젝트(기상청)
+* 프로필 및 포트폴리오 링크
     + http://estherpark01.mycafe24.com/profile/
 
 
