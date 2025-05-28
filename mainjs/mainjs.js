@@ -201,20 +201,31 @@ $('#content .company_right .com_bot ul li:eq(0) a img').css('filter','grayscale(
 var memo = [
   {title: '국가공인실천예절지도사', 
   sub: '인성예절지도를 수행하며 기업체, 사회단체 등에 의전행사 및 자문 등의 역할을 할 수 있는 전문적인 자격증을 보유한 자를 말한다.',
-  imgsrc: 'learn1.jpg'},
+  imgsrc: 'learn1.jpg',
+  href:'sub3_1.html'},
+
   {title: '유아다례지도사', 
   sub: '영ㆍ유아 어린이의 정서교육과 인성교육에 좋은 영향을 주는 차(茶)생활 예절을 체계적으로 교육 지도를 할 수 있는 유아다례 전문강사 교육 과정입니다.',
-  imgsrc: 'learn2.jpg'},
+  imgsrc: 'learn2.jpg',
+  href:'sub3_2.html'},
+  
   {title: '전통혼례지도사', 
   sub: '전통혼례를 현대화하고 작은 결혼식으로 대중화하여 건전한 혼례문화 보급과 함께 전통혼례 전문집례ㆍ집사로 활동할 수 있는 일자리 창출 교육 과정입니다.',
-  imgsrc: 'learn3.jpg'}
+  imgsrc: 'learn3.jpg',
+  href:'sub3_3.html'}
 ];
 
 var ind = 0; // 인덱스 카운터 0 1 2 
 var total = memo.length; // 배열 개수 3개
 
 function conchange(){ // 방향키 클릭 시 생성되는 태그
-    $('.learn .learn_inner img').attr('src','./images/'+memo[ind].imgsrc).hide().fadeIn('fast');
+      // $('.learn .learn_inner img').attr('src','./images/'+memo[ind].imgsrc).hide().fadeIn('fast');
+    $('.learn .learn_inner img').attr({
+        'src': './images/'+memo[ind].imgsrc,
+        'alt': memo[ind].title + ' 이미지'
+    }).hide().fadeIn('fast');
+
+    $('.learn_content .btn_plus').attr('href','./sub3/'+memo[ind].href);
 
     $('.learn_content h4').text(memo[ind].title); // 태그 생성
     $('.learn_content p').text(memo[ind].sub);

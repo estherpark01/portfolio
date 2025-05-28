@@ -37,17 +37,18 @@
     animation-duration:0.4s;
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
 .modal-custom .modal-content img{width: 350px; height: 400px; margin: auto 50px; border-radius: 15px;}
-.modal-content .modal-text{width: 350px;  transform: translateY(25%);}
+.modal-content .modal-text{width: 350px;  transform: translateY(30%);}
 .modal-content .modal-text .close-modal{transform: translate(340px, -110px);
     border: none; background: none; font-size: 2rem; 
-    cursor: pointer;}
+    cursor: pointer;
+    transition: all .2s;}
 .close-modal:hover,.close-modal:focus{color: red;}
 .modal-content .modal-text dl dt{font-size: 1.8rem; font-weight: bold; margin-bottom: 10px; color: #333;}
 .modal-content .modal-text dl dd{font-size: 1.1rem; line-height: 1.7rem; text-align: justify;}
 .modal-content .modal-text a{width: 100px; margin-top: 50px; font-size: 1.1rem; }
 .modal-content .modal-text a i{margin-left: 10px; transition: all .3s ease-out;}
 /* .modal-content .modal-text a:hover{border: 1px solid #B8A080; } */
-.modal-content .modal-text a:hover i{transform: translateX(15px); color: red;}
+.modal-content .modal-text a:hover .a1{transform: translateX(15px); color: red;}
 
 
 

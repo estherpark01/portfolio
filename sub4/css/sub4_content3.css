@@ -5,8 +5,9 @@
 .content_area .item_list li{display: flex; flex-direction: column; margin-bottom: 50px; 
     transition: all .3s ease-out;}
 .content_area .item_list li div{width: 450px; height: 420px; border-radius: 5px;
-    overflow: hidden;}
-.content_area .item_list li:hover div{box-shadow: 1px 1px 10px .5px;}
+    overflow: hidden;
+    transition: all .2s ease-out;}
+.content_area .item_list li:hover div{box-shadow: rgba(0, 0, 0, .3) 1px 1px 10px .5px;}
 .content_area .item_list li div img{width: 450px; height: 420px; margin-bottom: 15px;
     transform: scale(1.1);
     transition: all .5s ease-out;
