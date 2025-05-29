@@ -138,18 +138,18 @@
 									$row = mysqli_fetch_array($result);
 									// 하나의 레코드 가져오기
 									
-									$item_num     = $row[num];
-									$item_id      = $row[id];
-									$item_name    = $row[name];
-									$item_nick    = $row[nick];
-									$item_hit     = $row[hit];
-									$item_date    = $row[regist_day];
+									$item_num     = $row["num"];
+									$item_id      = $row["id"];
+									$item_name    = $row["name"];
+									$item_nick    = $row["nick"];
+									$item_hit     = $row["hit"];
+									$item_date    = $row["regist_day"];
 									$item_date = substr($item_date, 0, 10);
 									
 									// $item_category_1 = str_replace(" ", "&nbsp;", $row[category_1]);
 									// $item_category_2 = str_replace(" ", "&nbsp;", $row[category_2]);
-									$item_subject = str_replace(" ", "&nbsp;", $row[subject]);
-									$item_content = $row[content];
+									$item_subject = str_replace(" ", "&nbsp;", $row["subject"]);
+									$item_content = $row["content"];
 
 									$len_content = mb_strlen($item_content, 'utf-8'); //본문 글의 총 길이
 
@@ -161,8 +161,8 @@
 									$item_content = str_replace(" ", " ", $item_content);
 																		
 									// 이미지 경로 가져오기
-									if($row[file_copied_0]){	// 첨부된 첫번째 이미지가 있으면 해당 이미지
-										$item_img = './data/'.$row[file_copied_0];
+									if($row["file_copied_0"]){	// 첨부된 첫번째 이미지가 있으면 해당 이미지
+										$item_img = './data/'.$row["file_copied_0"];
 									}else{
 										$item_img = './data/default.jpg';	// 이미지가 없으면 default.jpg
 									}

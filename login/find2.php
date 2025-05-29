@@ -94,10 +94,10 @@
         }
         else  //1이면=아이디와 이름 전화번호가 모두 일치 한다면
         {
-            $userid = $row[id];
-            $username = $row[name];
-            $userhp = $row[hp];
-            $date = $row[regist_day];
+            $userid = $row["id"];
+            $username = $row["name"];
+            $userhp = $row["hp"];
+            $date = $row["regist_day"];
 
             // 랜덤 비밀번호 생성
             function generateRandomPassword($length=8, $strength=0) {

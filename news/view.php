@@ -13,29 +13,29 @@
     $row = mysqli_fetch_array($result);      
       // 하나의 레코드 가져오기
 	
-	$item_num     = $row[num];
-	$item_id      = $row[id];
-	$item_name    = $row[name];
-  	$item_nick    = $row[nick];
-	$item_hit     = $row[hit];
+	$item_num     = $row["num"];
+	$item_id      = $row["id"];
+	$item_name    = $row["name"];
+  	$item_nick    = $row["nick"];
+	$item_hit     = $row["hit"];
 
-	$image_name[0]   = $row[file_name_0];	// 원본파일 이름 a.jpg
-	$image_name[1]   = $row[file_name_1];
-	$image_name[2]   = $row[file_name_2];
+	$image_name[0]   = $row["file_name_0"];	// 원본파일 이름 a.jpg
+	$image_name[1]   = $row["file_name_1"];
+	$image_name[2]   = $row["file_name_2"];
 
 
-	$image_copied[0] = $row[file_copied_0];	// 2022_02_22_10_43_01_0.jpg
-	$image_copied[1] = $row[file_copied_1];
-	$image_copied[2] = $row[file_copied_2];
+	$image_copied[0] = $row["file_copied_0"];	// 2022_02_22_10_43_01_0.jpg
+	$image_copied[1] = $row["file_copied_1"];
+	$image_copied[2] = $row["file_copied_2"];
 
-    $item_date    = $row[regist_day];
+    $item_date    = $row["regist_day"];
 	
-	$item_category_1 = str_replace(" ", "&nbsp;", $row[category_1]);
-	$item_category_2 = str_replace(" ", "&nbsp;", $row[category_2]);
-	$item_subject = str_replace(" ", "&nbsp;", $row[subject]);
+	$item_category_1 = str_replace(" ", "&nbsp;", $row["category_1"]);
+	$item_category_2 = str_replace(" ", "&nbsp;", $row["category_2"]);
+	$item_subject = str_replace(" ", "&nbsp;", $row["subject"]);
 
-	$item_content = $row[content];
-	$is_html      = $row[is_html];
+	$item_content = $row["content"];
+	$is_html      = $row["is_html"];
 
 	if ($is_html!="y")
 	{

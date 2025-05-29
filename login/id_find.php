@@ -35,8 +35,8 @@
                     success: function(data) // 이 메소드가 완료되면 data라는 변수 안에 echo문이 들어감
                     {
                         $("#loadtext").html(data);  // span안에 있는 태그를 사용할것이기 때문에 html 함수사용
-                        
-                        
+                        $("#loadtext").fadeIn();
+                        $(".loadtext_bg").fadeIn();
                     }
                 });
                 
@@ -56,7 +56,7 @@
 <body>
 
     <header>
-        <h1><a href="../index.html">POSCO M-TECH LOGO</a></h1>
+        <h1><a href="../index.html">한국전통문화예절원 로고</a></h1>
     </header>
     
     <article id="content">

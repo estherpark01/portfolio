@@ -149,17 +149,17 @@
 									$row = mysqli_fetch_array($result);
 									// 하나의 레코드 가져오기
 						
-									$item_num     = $row[num];	// 실제 해당 레코드의 num필드에 있는 게시번호, 프라이머리 키
-									$item_id      = $row[id];
-									$item_name    = $row[name];
-									$item_nick    = $row[nick];
-									$item_hit     = $row[hit];
+									$item_num     = $row["num"];	// 실제 해당 레코드의 num필드에 있는 게시번호, 프라이머리 키
+									$item_id      = $row["id"];
+									$item_name    = $row["name"];
+									$item_nick    = $row["nick"];
+									$item_hit     = $row["hit"];
 						
-									$item_date    = $row[regist_day];	// 2022-02-21 (11:10)
+									$item_date    = $row["regist_day"];	// 2022-02-21 (11:10)
 									$item_date = substr($item_date, 0, 10);	// 2022-02-21
 						
-									$item_subject = $row[subject];
-									$item_content = $row[content];
+									$item_subject = $row["subject"];
+									$item_content = $row["content"];
 									// $item_subject = str_replace(" ", "&nbsp;", $row[subject]);
 									// $item_content = str_replace(" ", "&nbsp;", $row[content]);
 									// srt_replace 문자를 교체함. " "공백문자가 들어있으면 &nbsp; 로 변경해서 찍는다.

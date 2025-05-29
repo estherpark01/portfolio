@@ -13,17 +13,17 @@
 
 		$row = mysqli_fetch_array($result);      
 	
-		$item_nick     = $row[nick];
-		$item_subject     = $row[subject];
-		$item_content     = $row[content];
+		$item_nick     = $row["nick"];
+		$item_subject     = $row["subject"];
+		$item_content     = $row["content"];
 
-		$item_file_0 = $row[file_name_0];
-		$item_file_1 = $row[file_name_1];
-		$item_file_2 = $row[file_name_2];
+		$item_file_0 = $row["file_name_0"];
+		$item_file_1 = $row["file_name_1"];
+		$item_file_2 = $row["file_name_2"];
 
-		$copied_file_0 = $row[file_copied_0];
-		$copied_file_1 = $row[file_copied_1];
-		$copied_file_2 = $row[file_copied_2];
+		$copied_file_0 = $row["file_copied_0"];
+		$copied_file_1 = $row["file_copied_1"];
+		$copied_file_2 = $row["file_copied_2"];
 	}
 ?>
 <!DOCTYPE html>

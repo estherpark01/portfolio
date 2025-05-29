@@ -8,11 +8,11 @@
 
 		while ($row = mysqli_fetch_array($result))
 		{
-			$num = $row[num];
-			$len_subject = mb_strlen($row[subject], 'utf-8');	// 한글도 1자로 처리, 제목의 총 글자 수
-			$subject = $row[subject];
-			$len_content = mb_strlen($row[content], 'utf-8');
-			$content = $row[content];
+			$num = $row["num"];
+			$len_subject = mb_strlen($row["subject"], 'utf-8');	// 한글도 1자로 처리, 제목의 총 글자 수
+			$subject = $row["subject"];
+			$len_content = mb_strlen($row["content"], 'utf-8');
+			$content = $row["content"];
 
 			if ($len_subject > $char_limit)	// 제한글자수보다 크면
 			{
@@ -28,7 +28,7 @@
 				$content = $content."...";
 			}
 			
-			$regist_day = substr($row[regist_day], 0, 10);	// '2022-02-21'
+			$regist_day = substr($row["regist_day"], 0, 10);	// '2022-02-21'
 
             
 			

@@ -18,16 +18,17 @@
 	
 		// $item_category_1  = $row[category_1];
 		// $item_category_2  = $row[category_2];
-		$item_subject     = $row[subject];
-		$item_content     = $row[content];
+		$item_nick = $row["nick"]; 
+		$item_subject     = $row["subject"];
+		$item_content     = $row["content"];
 
-		$item_file_0 = $row[file_name_0];	// 원본이름의 파일 (a1.jpg)
-		$item_file_1 = $row[file_name_1];
-		$item_file_2 = $row[file_name_2];
+		$item_file_0 = $row["file_name_0"];	// 원본이름의 파일 (a1.jpg)
+		$item_file_1 = $row["file_name_1"];
+		$item_file_2 = $row["file_name_2"];
 
-		$copied_file_0 = $row[file_copied_0];	// 날짜시간으로 카피된 이름의 파일
-		$copied_file_1 = $row[file_copied_1];
-		$copied_file_2 = $row[file_copied_2];
+		$copied_file_0 = $row["file_copied_0"];	// 날짜시간으로 카피된 이름의 파일
+		$copied_file_1 = $row["file_copied_1"];
+		$copied_file_2 = $row["file_copied_2"];
 	}
 ?>
 

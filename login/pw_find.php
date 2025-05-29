@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>아이디찾기</title>
+	<title>비밀번호 찾기</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/login_common.css">
@@ -55,7 +55,7 @@
 <body>
 
     <header>
-        <h1><a href="../index.html">POSCO M-TECH LOGO</a></h1>
+        <h1><a href="../index.html">한국전통문화예절원 로고</a></h1>
     </header>
 
     <article id="content">

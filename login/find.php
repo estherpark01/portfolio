@@ -85,10 +85,10 @@
         }
         else  // 1이면=이름과 전화번호가 모두 일치 한다면
         {
-            $id = $row[id];
-            $name = $row[name];
-            $hp = $row[hp];
-            $date = $row[regist_day];
+            $id = $row["id"];
+            $name = $row["name"];
+            $hp = $row["hp"];
+            $date = $row["regist_day"];
 
             echo("
                 <script>

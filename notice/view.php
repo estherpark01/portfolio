@@ -18,18 +18,18 @@
     $row = mysqli_fetch_array($result);      
       // 하나의 레코드 가져오기
 	
-	$item_num     = $row[num];
-	$item_id      = $row[id];
-	$item_name    = $row[name];
-  	$item_nick    = $row[nick];
-	$item_hit     = $row[hit];
+	$item_num     = $row["num"];
+	$item_id      = $row["id"];
+	$item_name    = $row["name"];
+  	$item_nick    = $row["nick"];
+	$item_hit     = $row["hit"];
 
-    $item_date    = $row[regist_day];
+    $item_date    = $row["regist_day"];
 
-	$item_subject = str_replace(" ", "&nbsp;", $row[subject]); 	// 공백문자 대체
+	$item_subject = str_replace(" ", "&nbsp;", $row["subject"]); 	// 공백문자 대체
 
-	$item_content = $row[content];
-	$is_html      = $row[is_html];
+	$item_content = $row["content"];
+	$is_html      = $row["is_html"];
 
 	if ($is_html!="y")
 	{

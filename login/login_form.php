@@ -23,7 +23,7 @@
 <body>
 
 	<header>
-		<h1><a href="../index.html">한국전통문화예절원</a></h1>
+		<h1><a href="../index.html">한국전통문화예절원 로고</a></h1>
 	</header>
 
 

@@ -14,9 +14,9 @@
 	$result = mysqli_query( $connect, $sql);
 
 	$row = mysqli_fetch_array($result);   	
-	$item_nick = $row[nick]; 
-	$item_subject     = $row[subject];
-	$item_content     = $row[content];
+	$item_nick = $row["nick"]; 
+	$item_subject     = $row["subject"];
+	$item_content     = $row["content"];
 ?>
 <!DOCTYPE html>
 <html lang="ko">
