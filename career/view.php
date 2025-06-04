@@ -168,6 +168,13 @@
 <script src="../common/js/jquery.easing.1.3.js"></script>
 <script src="../common/js/common.js"></script>
 <script src="./common/js/sub6common.js"></script>
-<!-- <script src="./js/sub1_1.js"></script> -->
+<script>
+		function del(href) 
+		{
+			if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
+					document.location.href = href;
+			}
+		}
+	</script>
 </body>
 </html>

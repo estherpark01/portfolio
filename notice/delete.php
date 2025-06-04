@@ -11,6 +11,7 @@
 
     include "../lib/dbconn.php";
 
+    $num = intval($num);
     $sql = "delete from notice where num = $num";
     mysqli_query( $connect, $sql);
 
