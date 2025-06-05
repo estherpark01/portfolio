@@ -22,8 +22,8 @@
         $(document).ready(function() {
 
             $(".find").click(function() {           // 비밀번호찾기 버튼 클릭, id입력 상자에 id값 입력시
-                var id = $('.find_id').val();       // green2
-                var name = $('.find_name').val();   // 홍길동
+                var id = $('#find_id').val();       // green2
+                var name = $('#find_name').val();   // 홍길동
                 var hp1 = $('#hp1').val();          // 010
                 var hp2 = $('#hp2').val();          // 1111
                 var hp3 = $('#hp3').val();          // 2222
@@ -67,12 +67,12 @@
 
                 <ul>
                     <li>
-                        <label for="name" class="hidden" title="휴대폰 앞3자리를 선택하세요.">이름</label>
-                        <input type="text" name="name" class="find_name" required placeholder="이름을 입력하세요">
+                        <label for="find_name" class="hidden">이름</label>
+                        <input type="text" name="name" id="find_name" required placeholder="이름을 입력하세요">
                     </li>
                     <li>
-                        <label for="id" class="hidden">아이디</label>
-                        <input type="text" name="id" class="find_id" required placeholder="아이디를 입력하세요">
+                        <label for="find_id" class="hidden">아이디</label>
+                        <input type="text" name="id" id="find_id" required placeholder="아이디를 입력하세요">
                     </li>
                     <li class="hp">
                         <label class="hidden" for="hp1">연락처 앞3자리</label>

@@ -67,7 +67,7 @@
             <form name="find" method="post" action="find.php">
                 <ul>
                     <li>
-                        <label for="id" class="hidden">아이디</label>
+                        <label for="name" class="hidden">이름</label>
                         <input type="text" name="name" id="name" required placeholder="이름을 입력하세요">
                     </li>
                     <li class="hp">
