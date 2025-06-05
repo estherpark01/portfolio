@@ -5,27 +5,7 @@
 	@extract($_SESSION);
 
 	$table = "news";	// sql문에서 table명을 변수로 처리
-?>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>알림마당:보도자료</title>
-    
-	<link rel="shortcut icon" type="image/x-icon"  href="../favicon_1.ico" >
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	
-    <link rel="stylesheet" href="../common/css/aos.css">
-    <link rel="stylesheet" href="../common/css/common.css">
-    <link rel="stylesheet" href="../sub6/common/css/sub6common.css">
-    <link rel="stylesheet" href="./css/news.css">
-	<script src="../common/js/jquery-1.12.4.min.js"></script>
-	<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
-</head>
-<?
+
 	include "../lib/dbconn.php";
 
     
@@ -70,6 +50,27 @@
 	$start = ($page - 1) * $scale;      
 	$number = $total_record - $start;
 ?>
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>알림마당:보도자료</title>
+    
+	<link rel="shortcut icon" type="image/x-icon"  href="../favicon_1.ico" >
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	
+    <link rel="stylesheet" href="../common/css/aos.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../sub6/common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/news.css">
+	<script src="../common/js/jquery-1.12.4.min.js"></script>
+	<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+</head>
 <body>
 	<div class="skipNav">
         <a href="#content">본문 바로가기</a>

@@ -3,15 +3,7 @@
     @extract($_GET);
     @extract($_POST);
     @extract($_SESSION);
-?>
 
-<html lang="ko">
-<head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
-</head>
-<?
     // $id = $_POST['id'];
     // $pass = $_POST['pass'];
 
@@ -103,3 +95,16 @@
         }
     }
 ?>
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+</head>
+<body>
+</body>
+</html>
+
