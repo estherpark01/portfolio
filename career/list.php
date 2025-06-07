@@ -51,12 +51,12 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" dir="ltr">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>알림마당:채용공고</title>
+	<title>한국전통문화예절원 - 채용공고:알림마당</title>
 
     <link rel="shortcut icon" type="image/x-icon"  href="../favicon_1.ico" >
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
